@@ -3,8 +3,8 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 269
-        length: 44
+      - offset: 265
+        length: 300
         placeholder_text: "...  # TODO реализовать рекурсивный алгоритм"
         initial_state:
           length: 44
@@ -21,7 +21,8 @@ files:
           
               return fib_recursive(n - 1) + fib_recursive(n - 2)
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -36,5 +37,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 13 Jan 2025 14:08:36 UTC"
 record: -1

@@ -13,6 +13,7 @@ files:
         encrypted_possible_answer: self._stack.append(elem)
         selected: false
         status: Solved
+        is_visible: false
       - offset: 548
         length: 36
         placeholder_text: "...  # TODO реализовать операцию pop"
@@ -27,6 +28,7 @@ files:
                   return self._stack.pop()
         selected: false
         status: Solved
+        is_visible: false
       - offset: 1168
         length: 37
         placeholder_text: "...  # TODO реализовать операцию peek"
@@ -45,6 +47,7 @@ files:
                   return self._stack[inv_ind]
         selected: false
         status: Solved
+        is_visible: false
       - offset: 1525
         length: 38
         placeholder_text: "...  # TODO реализовать операцию clear"
@@ -55,6 +58,7 @@ files:
         encrypted_possible_answer: self._stack.clear()
         selected: false
         status: Solved
+        is_visible: false
       - offset: 1678
         length: 40
         placeholder_text: "...  # TODO реализовать операцию __len__"
@@ -65,6 +69,7 @@ files:
         encrypted_possible_answer: return len(self._stack)
         selected: false
         status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/test_task.py
     visible: false

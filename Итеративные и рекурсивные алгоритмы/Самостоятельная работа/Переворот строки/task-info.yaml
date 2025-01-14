@@ -16,7 +16,8 @@ files:
                   s[left], s[right] = s[right], s[left]
                   left, right = left + 1, right - 1
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -27,5 +28,8 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 14 Jan 2025 07:46:37 UTC"
 record: -1

@@ -13,6 +13,7 @@ files:
         encrypted_possible_answer: '...'
         selected: true
         status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/test_task.py
     visible: false

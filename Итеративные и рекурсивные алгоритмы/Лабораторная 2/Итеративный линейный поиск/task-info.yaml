@@ -3,7 +3,7 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 294
+      - offset: 308
         length: 50
         placeholder_text: "...  # TODO реализовать итеративный линейный поиск"
         initial_state:
@@ -12,7 +12,8 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -23,5 +24,8 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 14 Jan 2025 08:53:45 UTC"
 record: -1
