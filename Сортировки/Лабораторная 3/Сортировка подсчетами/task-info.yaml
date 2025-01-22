@@ -3,7 +3,7 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 486
+      - offset: 500
         length: 54
         placeholder_text: "...  # TODO реализовать алгоритм сортировки подсчетами"
         initial_state:
@@ -12,7 +12,8 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -27,5 +28,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 20 Jan 2025 16:50:11 UTC"
 record: -1

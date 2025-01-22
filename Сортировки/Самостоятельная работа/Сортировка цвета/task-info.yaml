@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 152
-        length: 3
+        length: 241
         placeholder_text: '...'
         initial_state:
           length: 3
@@ -23,7 +23,8 @@ files:
                       nums[mid], nums[high] = nums[high], nums[mid]
                       high -= 1
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -34,5 +35,8 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 21 Jan 2025 08:03:30 UTC"
 record: -1

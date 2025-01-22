@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 97
-        length: 3
+        length: 36
         placeholder_text: '...'
         initial_state:
           length: 3
@@ -15,7 +15,8 @@ files:
               set2 = set(nums2)
               return list(set1 & set2)
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -26,5 +27,8 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 21 Jan 2025 07:47:52 UTC"
 record: -1

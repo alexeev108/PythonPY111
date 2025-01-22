@@ -3,8 +3,8 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 520
-        length: 53
+      - offset: 534
+        length: 638
         placeholder_text: "...  # TODO реализовать алгоритм сортировки пузырьком"
         initial_state:
           length: 53
@@ -12,7 +12,8 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -27,5 +28,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 20 Jan 2025 15:51:26 UTC"
 record: -1

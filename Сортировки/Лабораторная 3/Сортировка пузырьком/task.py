@@ -1,3 +1,4 @@
+import random
 from typing import Sequence
 
 
@@ -14,3 +15,19 @@ def sort(container: Sequence[int]) -> Sequence[int]:
     :return: Отсортированный в порядке возрастания массив
     """
     ...  # TODO реализовать алгоритм сортировки пузырьком
+    if len(container) > 1:
+        container_lenght = len(container)
+        for el in range(container_lenght):
+            flag = False
+            for el_2 in range(0, container_lenght - el - 1):
+                if container[el_2] > container[el_2 + 1]:
+                    container[el_2], container[el_2 + 1] = container[el_2 + 1], container[el_2]
+                    flag = True
+            if not flag:
+                break
+        return container
+    return container
+
+if __name__ == '__main__':
+    data = [random.randrange(-50, 50) for _ in range(50)]
+    print(sort(data))
