@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 330
-        length: 56
+        length: 500
         placeholder_text: "...  # TODO найти количество маршрутов до каждой ступени"
         initial_state:
           length: 56
@@ -29,7 +29,8 @@ files:
           
               return count_paths
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -44,5 +45,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 28 Jan 2025 09:58:50 UTC"
 record: -1

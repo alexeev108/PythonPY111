@@ -3,8 +3,8 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 66
-        length: 3
+      - offset: 62
+        length: 530
         placeholder_text: '...'
         initial_state:
           length: 3
@@ -30,7 +30,8 @@ files:
                       right -= 1
               return res
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -45,5 +46,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 28 Jan 2025 08:38:40 UTC"
 record: -1

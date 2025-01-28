@@ -11,6 +11,21 @@ def stairway_path(stairway: Sequence[Union[float, int]]) -> Union[float, int]:
     """
     ...  # TODO реализовать прямой метод расчета
 
+    if not stairway:
+        raise ValueError
+    if len(stairway) == 1:
+        return stairway[0]
+    if len(stairway) == 2:
+        return stairway[1]
+
+    steps = []
+    steps.append(stairway[0])
+    steps.append(stairway[1])
+    for i in range(2, len(stairway)):
+        steps.append(min(steps[i - 1], steps[i - 2]) + stairway[i])
+
+    return steps[-1]
+
 
 if __name__ == '__main__':
     print(stairway_path([1, 3, 1, 5]))  # 7

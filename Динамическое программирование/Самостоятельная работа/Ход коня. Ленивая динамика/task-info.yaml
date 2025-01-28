@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 342
-        length: 40
+        length: 468
         placeholder_text: "... # TODO реализуйте подсчет ходов коня"
         initial_state:
           length: 40
@@ -33,7 +33,8 @@ files:
           
               return get_steps(rows-1, cols-1)
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -48,5 +49,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 27 Jan 2025 17:09:20 UTC"
 record: -1

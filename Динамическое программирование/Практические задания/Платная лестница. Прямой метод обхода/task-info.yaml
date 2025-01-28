@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 449
-        length: 44
+        length: 403
         placeholder_text: "...  # TODO реализовать прямой метод расчета"
         initial_state:
           length: 44
@@ -26,7 +26,8 @@ files:
           
               return coast[-1]
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -37,5 +38,8 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 28 Jan 2025 10:10:12 UTC"
 record: -1

@@ -11,7 +11,16 @@ def rocket_coasts(table: List[List[int]]) -> List[List[int]]:
     :return: Таблицу стоимостей перемещения по клеткам
     """
     ...  # TODO рассчитать таблицу стоимостей перемещений
+    table_sum = table.copy()
+    for i in range(1, len(table_sum)):
+        table_sum[i][0] += table_sum[i - 1][0]
+    for i in range(1, len(table_sum[0])):
+        table_sum[0][i] += table_sum[0][i - 1]
 
+    for i in range(1, len(table_sum)):
+        for j in range(1, len(table_sum[i])):
+            table_sum[i][j] += min(table_sum[i][j - 1], table_sum[i - 1][j])
+    return table_sum
 
 if __name__ == '__main__':
     coasts_ceil = [
@@ -20,4 +29,6 @@ if __name__ == '__main__':
         [1, 5, 2, 5]
     ]
     total_coasts = rocket_coasts(coasts_ceil)
+    for el in total_coasts:
+        print(*el)
     print(total_coasts[-1][-1])  # 21
