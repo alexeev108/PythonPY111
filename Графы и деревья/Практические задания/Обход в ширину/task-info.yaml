@@ -33,8 +33,9 @@ files:
           
               return path
         selected: false
-        status: Unchecked
-      - offset: 633
+        status: Solved
+        is_visible: false
+      - offset: 996
         length: 72
         placeholder_text: '# TODO записать граф с помощью модуля networkx и прверить обход
       в ширину'
@@ -63,7 +64,8 @@ files:
           
               print(bfs(graph, "A"))
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/__init__.py
     visible: false
@@ -72,5 +74,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 03 Feb 2025 09:46:13 UTC"
 record: -1

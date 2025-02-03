@@ -3,8 +3,8 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 531
-        length: 39
+      - offset: 561
+        length: 311
         placeholder_text: "...  # TODO реализовать обход в глубину"
         initial_state:
           length: 39
@@ -25,7 +25,8 @@ files:
           
               return path
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -40,5 +41,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 03 Feb 2025 09:59:42 UTC"
 record: -1

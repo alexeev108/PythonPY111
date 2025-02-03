@@ -19,9 +19,10 @@ files:
           
               return coasts
         selected: false
-        status: Unchecked
-      - offset: 809
-        length: 25
+        status: Solved
+        is_visible: false
+      - offset: 1013
+        length: 469
         placeholder_text: "...  # TODO записать граф"
         initial_state:
           length: 25
@@ -41,7 +42,8 @@ files:
                   (5, 6, 9),
               ])
         selected: false
-        status: Unchecked
+        status: Solved
+        is_visible: false
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -56,5 +58,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 03 Feb 2025 10:26:50 UTC"
 record: -1
